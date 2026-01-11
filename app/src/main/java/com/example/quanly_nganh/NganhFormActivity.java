@@ -20,6 +20,13 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+/*
+ ************************************************************
+ *  Như 1 vở kịch buồn , anh diễn trọn cả nhiều vai           *
+ *                                                          *
+ *                                  Thái đẹp trai vcl       *
+ ************************************************************
+ */
 
 public class NganhFormActivity extends AppCompatActivity {
     EditText edtMa, edtTen;
