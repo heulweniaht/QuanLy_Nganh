@@ -8,6 +8,7 @@ import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface ApiService {
@@ -20,9 +21,9 @@ public interface ApiService {
     @POST("api/Nganh")
     Call<Void> addNganh(@Body Nganh nganh);
 
-    @PUT("api/Nganh")
-    Call<Void> updateNganh(@Body Nganh nganh);
+    @PUT("api/Nganh/{id}")
+    Call<Void> updateNganh(@Path("id") String maNganh, @Body Nganh nganh);
 
-    @DELETE("api/Nganh")
-    Call<Void> deleteNganh(@Query("maNganh") String maNganh);
+    @DELETE("api/Nganh/{id}")
+    Call<Void> deleteNganh(@Path("id") String maNganh);
 }

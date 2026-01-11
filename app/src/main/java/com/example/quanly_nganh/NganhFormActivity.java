@@ -100,7 +100,7 @@ public class NganhFormActivity extends AppCompatActivity {
         Nganh nganh = new Nganh(ma, ten, selectedKhoa.getMaKhoa());
 
         if(isEdit){
-            ApiClient.getService().updateNganh(nganh).enqueue(actionCallback);
+            ApiClient.getService().updateNganh(ma, nganh).enqueue(actionCallback);
         } else {
             ApiClient.getService().addNganh(nganh).enqueue(actionCallback);
         }
